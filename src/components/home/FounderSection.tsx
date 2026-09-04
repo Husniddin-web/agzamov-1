@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Container } from '../common/Container';
-import { GlowBadge } from '../common/GlowBadge';
 import { Button } from '../common/Button';
 import { Quote, Award, CheckCircle, ArrowRight } from 'lucide-react';
 
@@ -56,8 +55,6 @@ export const FounderSection: React.FC = () => {
 
           {/* Right Column: Philosophy, Quote & Signature (7 cols) */}
           <div data-aos="fade-left" className="lg:col-span-7 space-y-8 text-left">
-            <GlowBadge icon>{t('tag')}</GlowBadge>
-
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
               {t('title')}
             </h2>

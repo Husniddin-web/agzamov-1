@@ -27,10 +27,6 @@ export const FaqSection: React.FC = () => {
           {/* Left Column: Clean Title & Direct Assistance Card */}
           <div data-aos="fade-right" className="lg:col-span-5 space-y-8">
             <div className="space-y-4">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-red-500">
-                <span className="w-1.5 h-1.5 bg-red-600 shrink-0" />
-                <span>{t('tag')}</span>
-              </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white uppercase leading-tight">
                 {t('title')}
               </h2>

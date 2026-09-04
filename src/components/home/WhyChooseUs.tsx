@@ -79,7 +79,6 @@ export const WhyChooseUs: React.FC = () => {
       <Container className="relative z-10 space-y-16 sm:space-y-20">
         {/* Section Heading */}
         <SectionHeading
-          tag={t('tag')}
           title={t('title')}
           subtitle={t('subtitle')}
         />

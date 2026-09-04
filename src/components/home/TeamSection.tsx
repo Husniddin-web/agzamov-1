@@ -55,10 +55,6 @@ export const TeamSection: React.FC = () => {
       <Container className="relative z-10 space-y-10 sm:space-y-16">
         {/* Section Header (Clean, Badgeless, Senior UI/UX) */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-red-500">
-            <span className="w-1.5 h-1.5 bg-red-600 shrink-0" />
-            <span>{tNav('team')}</span>
-          </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase">
             {tNav('team')}
           </h2>
