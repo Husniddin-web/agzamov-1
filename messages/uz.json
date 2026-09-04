@@ -1,0 +1,298 @@
+{
+  "common": {
+    "brandName": "AGZAMOV LEGAL GROUP",
+    "brandTagline": "Professional Yuridik Xizmatlar va Advokatura",
+    "getConsultation": "Bepul konsultatsiya",
+    "contactUs": "Bog'lanish",
+    "learnMore": "Batafsil",
+    "readMore": "To'liq o'qish",
+    "viewAll": "Barchasini ko'rish",
+    "allServices": "Barcha xizmatlar",
+    "allNews": "Barcha maqolalar",
+    "ourTeam": "Bizning jamoa",
+    "phone": "+998 95 133 15 15",
+    "email": "info@agzamovlegal.uz",
+    "address": "Toshkent sh., Mirobod tumani, Amir Temur shox ko'chasi, 107B",
+    "workingHours": "Dush - Juma: 09:00 - 18:00",
+    "callUsAnytime": "Qo'ng'iroq qiling",
+    "openingTimeTitle": "Ish vaqti",
+    "emailUsNow": "Elektron pochta",
+    "getQuote": "Konsultatsiya olish",
+    "emergencySupport": "24/7 Favqulodda yordam",
+    "directCall": "Tezkor aloqa va konsultatsiya:",
+    "officeAddress": "Bosh ofis manzili",
+    "callByPhone": "Telefon orqali bog‘lanish",
+    "requestLegalHelp": "Yuridik yordam so‘rash",
+    "requestLegalHelpDesc": "Ma'lumotlaringizni qoldiring, advokatlarimiz 15 daqiqa ichida siz bilan bog‘lanishadi.",
+    "formValidationAlert": "Iltimos, ismingiz va telefon raqamingizni to‘liq kiriting.",
+    "prev": "Oldingi",
+    "next": "Keyingi"
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "team": "Jamoa",
+    "news": "Yangiliklar",
+    "contact": "Bog'lanish"
+  },
+  "hero": {
+    "badge": "O'zbekistonda ishonchli yuridik himoya",
+    "titlePrefix": "Biznesingiz va Huquqlaringiz Uchun",
+    "titleHighlight": "Murosasiz Himoya",
+    "subtitle": "Biz har bir ishga individual va strategik yondashamiz. Murakkab sud jarayonlaridan tortib, yirik biznes loyihalargacha — sizning manfaatlaringiz doim ishonchli qo'llarda.",
+    "primaryCta": "Tezkor konsultatsiya olish",
+    "secondaryCta": "Xizmatlar bilan tanishish",
+    "emergencyText": "Shoshilinch holatlar uchun 24/7 advokat yordami"
+  },
+  "stats": {
+    "experience": "Yillik professional tajriba",
+    "cases": "Muvaffaqiyatli yakunlangan ishlar",
+    "partners": "Doimiy korporativ mijozlar",
+    "winRate": "Ijobiy natijalar ko'rsatkichi",
+    "support": "Yuridik maslahat va yordam"
+  },
+  "whyUs": {
+    "tag": "Nega aynan biz?",
+    "title": "Nega Aynan Bizni Tanlashadi?",
+    "subtitle": "Biz shunchaki maslahat bermaymiz — muammolaringizga aniq, qonuniy va samarali yechim topamiz.",
+    "economic": {
+      "subtitle": "Economic",
+      "title": "Iqtisodiy Samaradorlik",
+      "desc": "Ortiqcha va yashirin xarajatlarsiz aniq shartnoma asosida halol hamkorlik."
+    },
+    "professional": {
+      "subtitle": "Professional",
+      "title": "Oliy Toifali Jamoa",
+      "desc": "Har bir soha bo‘yicha ko‘p yillik amaliy sud va konsalting tajribasiga ega advokatlar."
+    },
+    "security": {
+      "subtitle": "Security",
+      "title": "To‘liq Maxfiylik va Xavfsizlik",
+      "desc": "Advokatlik siri va ma’lumotlaringiz xavfsizligi biz uchun oliy va murosasiz qoidadir."
+    },
+    "time": {
+      "subtitle": "Time",
+      "title": "Vaqt va Tezkor Natija",
+      "desc": "Masalangiz zudlik bilan tahlil qilinib, eng optimal va samarali yechim ishlab chiqiladi."
+    },
+    "emergency": {
+      "subtitle": "24*7 Support",
+      "title": "24/7 Favqulodda Himoya",
+      "desc": "Kutilmagan tekshiruvlar yoki tergov holatlarida kechayu-kunduz zudlik bilan yetib boramiz."
+    },
+    "satisfaction": {
+      "subtitle": "User Satisfaction",
+      "title": "Mijozlar Ishonchi va Natija",
+      "desc": "540 dan ziyod yutib olingan sud ishlari va 98% muvaffaqiyat ko‘rsatkichi kafolati."
+    }
+  },
+  "founder": {
+    "tag": "Muassis falsafasi",
+    "title": "G'alaba tasodif emas, u puxta rejalashtirilgan strategiya natijasidir",
+    "quote": "«Qonun har doim haqiqat tomonida bo'lishi kerak. Ammo haqiqatni himoya qilish uchun kuch, aql va chekinmas jasorat talab qilinadi. Biz mijozlarimiz uchun faqat maslahatchi emas, ularning eng ishonchli qalqonimiz.»",
+    "name": "Agzamov Bobur Dilshodovich",
+    "role": "Boshqaruvchi hamkor, Oliy toifali advokat",
+    "experience": "15+ yillik sud va arbitraj tajribasi"
+  },
+  "services": {
+    "tag": "YURIDIK AMALIYOT VA HIMOYА",
+    "title": "BIZNING XIZMATLAR",
+    "subtitle": "Biz cheklangan sondagi ishlarni olamiz. Har biri yordamchilarga berilmasdan, bevosita advokatning shaxsiy ishtirokida hal qilinadi.",
+    "learnMore": "Batafsil ma’lumot",
+    "allServices": "Barcha xizmatlar",
+    "corporate": {
+      "title": "Korporativ va Biznes Huquqi",
+      "desc": "Kompaniyalarni ro'yxatdan o'tkazish, M&A bitimlari, ichki hujjatlarni xalqaro standartlarga moslashtirish va doimiy yuridik autsorsing."
+    },
+    "disputes": {
+      "title": "Iqtisodiy va Fuqarolik Nizolari",
+      "desc": "Shartnoma shartlarini buzish, qarzdorlikni undirish, mulkiy da'volar va iqtisodiy sudlarda to'liq vakillik."
+    },
+    "criminal": {
+      "title": "Jinoiy Himoya va Tergov Vakilligi",
+      "desc": "Iqtisodiy jinoyatlar, mansab vakolati bilan bog'liq ishlar va tergov organlarida professional advokatlik himoyasi."
+    },
+    "tax": {
+      "title": "Soliq Huquqi va Tekshiruvlar Auditi",
+      "desc": "Soliq idoralari bilan nizolarni hal qilish, noqonuniy jarimalarni bekor qilish va biznesni soliq risklaridan himoyalash."
+    },
+    "ip": {
+      "title": "Intellektual Mulk va IT Huquqi",
+      "desc": "Brendlar, patentlar, mualliflik huquqini himoya qilish, IT shartnomalari (NDA, SLA, SaaS) va litsenziyalash."
+    },
+    "realestate": {
+      "title": "Ko'chmas Mulk va Qurilish",
+      "desc": "Yirik investitsion yer uchastkalari, ko'chmas mulk oldi-sotdi bitimlarini tozalash va qurilish litsenziyalari."
+    }
+  },
+  "team": {
+    "tag": "Mutaxassislarimiz",
+    "title": "Bizning Professional Jamoa",
+    "subtitle": "Yirik sud nizolari, xalqaro arbitraj va korporativ himoyada yuzlab g‘alabalarga erishgan oliy toifali advokatlarimiz.",
+    "viewProfile": "Profilni ko'rish",
+    "prevLawyer": "Oldingi advokat",
+    "nextLawyer": "Keyingi advokat"
+  },
+  "partners": {
+    "tag": "Bizga ishonishadi",
+    "title": "Ishonch bildirgan hamkorlarimiz",
+    "subtitle": "O'zbekiston va xorijning nufuzli kompaniyalari o'zlarining eng nozik yuridik masalalarini bizga topshirgan."
+  },
+  "testimonials": {
+    "tag": "Mijozlarimiz fikri",
+    "title": "Mijozlarimiz Biz Haqimizda",
+    "subtitle": "Mijozlarimiz bizning professionalligimiz va strategik yondashuvimizni yuqori baholaydilar."
+  },
+  "news": {
+    "tag": "Huquqiy tahlillar",
+    "title": "So'nggi yangiliklar va maqolalar",
+    "subtitle": "Qonunchilikdagi eng so'nggi o'zgarishlar, sud pretsedentlari va amaliy yuridik tavsiyalar.",
+    "publishedOn": "Nashr qilindi",
+    "readTime": "daqiqalik o'qish"
+  },
+  "faq": {
+    "tag": "Savollarga javoblar",
+    "title": "Ko'p beriladigan savollar",
+    "subtitle": "Mijozlarimiz tomonidan eng ko'p beriladigan savollarga aniq va lo'nda javoblar."
+  },
+  "contact": {
+    "tag": "Aloqa",
+    "title": "Yuridik maslahat uchun so'rov qoldiring",
+    "subtitle": "Mutaxassislarimiz vaziyatingizni o'rganib chiqib, 15 daqiqa ichida siz bilan bog'lanishadi.",
+    "fullName": "To'liq ismingiz",
+    "phone": "Telefon raqamingiz",
+    "service": "Xizmat turini tanlang",
+    "message": "Vaziyatingiz haqida qisqacha yozing",
+    "submit": "Arizani yuborish",
+    "submitting": "Yuborilmoqda...",
+    "successMessage": "Arizangiz muvaffaqiyatli qabul qilindi! Tez orada mutaxassisimiz siz bilan bog'lanadi.",
+    "directContact": "To'g'ridan-to'g'ri aloqa",
+    "telegram": "Telegram orqali bog'lanish",
+    "officeLocation": "Bosh ofisimiz joylashuvi"
+  },
+  "footer": {
+    "description": "AGZAMOV LEGAL GROUP — Sizning biznesingiz va huquqlaringizning mustahkam kafolati. Toshkent shahrida professional yuridik xizmatlar.",
+    "navigation": "Navigatsiya",
+    "practiceAreas": "Amaliyot sohalari",
+    "contactInfo": "Aloqa ma'lumotlari",
+    "allRightsReserved": "Barcha huquqlar himoyalangan.",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari"
+  },
+  "aboutPage": {
+    "badge": "Kompaniya tarixi va missiyasi",
+    "titlePrefix": "Biz Haqimizda —",
+    "titleHighlight": "AGZAMOV LEGAL",
+    "description": "Biznesingizni himoya qilish va adolatni tiklash uchun birlashgan yetakchi advokat va yuridik maslahatchilar jamoasi.",
+    "historyTag": "Bizning Tarix",
+    "historyTitle": "Yuksak obro' va yuzlab yutilgan sud ishlari ortidagi haqiqat",
+    "historyP1": "AGZAMOV LEGAL GROUP — Toshkent shahrida tashkil etilgan bo'lib, qisqa fursat ichida respublikadagi eng ishonchli va murosasiz advokatlik tuzilmalaridan biriga aylandi. Bizning maqsadimiz — mijozlarimizning huquqlari va biznes aktivlarini har qanday murakkab vaziyatda xavfsiz saqlashdir.",
+    "historyP2": "Biz shunchaki nazariy qonun moddalarini sanab bermaymiz. Biz amaliyotda ishlaydigan, real sud muhokamalarida sinalgan va mijozning foydasiga hal bo'ladigan strategik rejalarni ishlab chiqamiz.",
+    "experienceBadge": "12+ Yil",
+    "experienceDesc": "O'zbekiston va xalqaro maydonda muvaffaqiyatli yuridik tajriba",
+    "casesCount": "540+",
+    "casesLabel": "Muvaffaqiyatli ishlar",
+    "winRate": "98%",
+    "winRateLabel": "G'alaba ko'rsatkichi",
+    "valuesTag": "Qadriyatlarimiz",
+    "valuesTitle": "Bizning Bosh Tamoyillarimiz",
+    "valuesSubtitle": "Har bir qabul qilingan qaror va sud jarayonida ushbu 4 ta tayanch mezoniga suyanamiz.",
+    "values": {
+      "professionalism": {
+        "title": "Murosasiz Professionallik",
+        "desc": "Biz har bir ishga chuqur tahliliy yondashamiz va faqat qonun doirasida maksimal foydali natijaga erishamiz."
+      },
+      "confidentiality": {
+        "title": "Mutlaq Maxfiylik",
+        "desc": "Advokatlik siri biz uchun muqaddas burchdir. Ish detallari hech qachon uchinchi shaxslarga oshkor etilmaydi."
+      },
+      "strategy": {
+        "title": "Strategik Tafakkur",
+        "desc": "Biz faqat bugungi emas, 5-10 qadam oldindagi huquqiy xatarlarni ko'ra olamiz va ularni oldindan to'xtatamiz."
+      },
+      "integrity": {
+        "title": "Halol Hamkorlik",
+        "desc": "Mijozga asossiz va'dalar bermaymiz, vaziyatni xolis va ochiq baholab, shaffof harakat qilamiz."
+      }
+    },
+    "founderTag": "Rahbariyat Murojaati",
+    "founderQuote": "«Biznesingizning har bir daqiqasi qimmatli. Huquqiy muammolarni bizga ishonib topshiring.»",
+    "founderDesc": "Advokatlik kasbi — bu faqat qonunlarni bilish emas, balki odamlarning taqdiri va bizneslarning kelajagi uchun to'liq mas'uliyatni o'z zimmasiga olish san'atidir. AGZAMOV LEGAL GROUP jamoasi aynan shu mas'uliyat bilan xizmat qiladi.",
+    "contactLawyer": "Advokat bilan bog'lanish",
+    "ourTeamMembers": "Jamoamiz a'zolari"
+  },
+  "servicesPage": {
+    "badge": "Amaliyot yo'nalishlari",
+    "title": "Yuridik Xizmatlarimiz",
+    "subtitle": "Biznesingizni huquqiy xatarlardan himoya qiluvchi va sudlarda manfaatlaringizni kafolatlovchi to'liq spektrdagi xizmatlar.",
+    "casesSuffix": "ishlar",
+    "workflowTag": "Ish Jarayoni",
+    "workflowTitle": "Qanday Qilib G'alabaga Erishamiz?",
+    "workflowSubtitle": "Har bir nizo va loyihani 4 ta bosqichli tizimli metodologiya orqali hal qilamiz.",
+    "workflow": {
+      "step1": {
+        "title": "Hujjatlarni Sinchkov Tahlil Qilish",
+        "desc": "Mavjud shartnomalar, dalillar va da‘volarni chuqur o‘rganib, real xavf va imkoniyatlarni aniqlaymiz."
+      },
+      "step2": {
+        "title": "G‘oliblik Strategiyasini Tuzish",
+        "desc": "Sud amaliyoti va qonun talablari asosida har bir bosqich uchun aniq taktik reja ishlab chiqamiz."
+      },
+      "step3": {
+        "title": "Muzokaralar va Sud Himoyasi",
+        "desc": "Sud majlislarida murosasiz himoya qilamiz yoki nizoni suddan tashqari maksimal foydali kelishuv bilan hal etamiz."
+      },
+      "step4": {
+        "title": "Ijroni Ta‘minlash va Natija",
+        "desc": "Qaror qabul qilinishi bilan cheklanmay, mablag‘ yoki mulkning mijozga to‘liq qaytarilishini ta‘minlaymiz."
+      }
+    },
+    "ctaTitle": "Sizga Qaysi Xizmat Turida Yordam Kerak?",
+    "ctaDesc": "Vaziyatingizni advokatimizga tushuntiring, 15 daqiqa ichida dastlabki yuridik baho va taklifni taqdim etamiz.",
+    "ctaButton": "Maslahat uchun so'rov qoldirish",
+    "detail": {
+      "badge": "Yuridik amaliyot",
+      "overviewTitle": "Xizmat Haqida Umumiy Ma'lumot",
+      "solutionsTitle": "Biz Taqdim Etadigan Huquqiy Yechimlar",
+      "guaranteeTitle": "Kafolatlangan Maxfiylik va Halollik",
+      "guaranteeDesc": "Ushbu yo'nalish bo'yicha tuziladigan shartnoma mijozning to'liq huquqiy xavfsizligini ta'minlaydi. Har bir harakat O'zbekiston Respublikasi «Advokatura to'g'risida»gi qonuni talablariga qat'iy mos ravishda amalga oshiriladi.",
+      "consultTitle": "Ushbu Xizmat Bo'yicha Maslahat Oling",
+      "consultSubtitle": "Advokatimiz 15 daqiqada siz bilan bog'lanadi",
+      "orCallDirect": "Yoki to'g'ridan-to'g'ri qo'ng'iroq qiling:"
+    }
+  },
+  "teamPage": {
+    "badge": "Professional Advokatura",
+    "title": "Bizning Jamoa",
+    "subtitle": "O'z sohasining yetakchi advokatlari, sobiq sudyalar va yirik korporatsiyalarning bosh huquqshunoslari sizning manfaatlaringizni himoya qilish uchun birlashgan.",
+    "specialization": "Ixtisoslik",
+    "bookAppointment": "Uchrashuv belgilash",
+    "joinUsTitle": "Jamoamizga Qo'shilmoqchimisiz?",
+    "joinUsDesc": "Agar siz yuksak kasbiy mahoratga va kuchli tahliliy fikrlashga ega huquqshunos bo'lsangiz, rezyumeyingizni bizga yuboring.",
+    "sendResume": "Rezyumeni yuborish (hr@agzamovlegal.uz)"
+  },
+  "newsPage": {
+    "badge": "Huquqiy tahlillar va yangiliklar",
+    "title": "Yangiliklar va Maqolalar",
+    "subtitle": "Qonunchilikdagi yangi qarorlar, sud pretsedentlari va biznesni xavflardan asrash bo'yicha advokatlarimiz tahlili.",
+    "author": "Muallif",
+    "minutes": "daqiqa",
+    "readTimeSuffix": "daqiqalik mutolaa",
+    "backToArticles": "Barcha maqolalarga qaytish",
+    "share": "Ulashish:"
+  },
+  "contactPage": {
+    "title": "Biz Bilan Bog‘laning",
+    "subtitle": "Har qanday savol yoki nizo bo‘yicha advokatlarimiz bilan zudlik bilan bog‘lanishingiz yoki ofisimizga tashrif buyurishingiz mumkin.",
+    "emergencyBadge": "Favqulodda Holatlar Uchun (24/7)",
+    "emergencyDesc": "Kechayu-kunduz shoshilinch advokat chaqiruvi:",
+    "officeTitle": "Bosh Ofis Ma‘lumotlari",
+    "addressLabel": "Manzil",
+    "phonesLabel": "Telefonlar",
+    "emailLabel": "Elektron Pochta",
+    "workingHoursLabel": "Ish Vaqti",
+    "onlineRequestTitle": "Onlayn Murojaat Qoldirish",
+    "onlineRequestDesc": "Ma'lumotlaringizni to‘ldiring, advokatlarimiz tez orada siz bilan bog‘lanishadi."
+  }
+}

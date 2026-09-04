@@ -1,0 +1,298 @@
+{
+  "common": {
+    "brandName": "AGZAMOV LEGAL GROUP",
+    "brandTagline": "Professional Legal Services & Advocacy",
+    "getConsultation": "Free Consultation",
+    "contactUs": "Contact Us",
+    "learnMore": "Learn More",
+    "readMore": "Read Full Story",
+    "viewAll": "View All",
+    "allServices": "All Services",
+    "allNews": "All Articles",
+    "ourTeam": "Our Team",
+    "phone": "+998 95 133 15 15",
+    "email": "info@agzamovlegal.uz",
+    "address": "107B Amir Temur Avenue, Mirabad District, Tashkent",
+    "workingHours": "Mon - Fri: 09:00 - 18:00",
+    "callUsAnytime": "Call us anytime",
+    "openingTimeTitle": "Opening time",
+    "emailUsNow": "Email us now",
+    "getQuote": "Get Consultation",
+    "emergencySupport": "24/7 Emergency Support",
+    "directCall": "Direct Contact & Counsel:",
+    "officeAddress": "Headquarters Location",
+    "callByPhone": "Call by Phone",
+    "requestLegalHelp": "Request Legal Assistance",
+    "requestLegalHelpDesc": "Leave your contact details, our attorneys will reach out to you within 15 minutes.",
+    "formValidationAlert": "Please provide your full name and phone number.",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "team": "Our Team",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Trusted Legal Protection in Uzbekistan",
+    "titlePrefix": "For Your Business & Rights",
+    "titleHighlight": "Uncompromising Defense",
+    "subtitle": "We deliver a bespoke and strategic approach to every legal challenge. From high-stakes litigation to landmark corporate transactions, your interests remain securely guarded.",
+    "primaryCta": "Get Consultation",
+    "secondaryCta": "Explore Services",
+    "emergencyText": "24/7 emergency legal assistance available"
+  },
+  "stats": {
+    "experience": "Years of Legal Excellence",
+    "cases": "Successfully Resolved Cases",
+    "partners": "Corporate Retainer Clients",
+    "winRate": "Case Victory Success Rate",
+    "support": "Legal Support & Counsel"
+  },
+  "whyUs": {
+    "tag": "Why AGZAMOV LEGAL?",
+    "title": "Why Discerning Clients Choose Us",
+    "subtitle": "We don't merely offer legal advice — we formulate precise, lawful, and decisive solutions for your most demanding challenges.",
+    "economic": {
+      "subtitle": "Economic",
+      "title": "Economic Efficiency",
+      "desc": "Transparent engagement agreements with zero hidden costs or ambiguous fees."
+    },
+    "professional": {
+      "subtitle": "Professional",
+      "title": "Elite Tier Attorneys",
+      "desc": "Seasoned legal practitioners possessing decades of high-stakes courtroom experience."
+    },
+    "security": {
+      "subtitle": "Security",
+      "title": "Absolute Confidentiality",
+      "desc": "Ironclad attorney-client privilege and confidential data protection as an inviolable duty."
+    },
+    "time": {
+      "subtitle": "Time",
+      "title": "Time-Critical Execution",
+      "desc": "Rapid preliminary assessment and immediate execution of proven winning strategy."
+    },
+    "emergency": {
+      "subtitle": "24*7 Support",
+      "title": "24/7 Emergency Shield",
+      "desc": "Immediate attorney deployment during unannounced inspections, regulatory audits, or detentions."
+    },
+    "satisfaction": {
+      "subtitle": "User Satisfaction",
+      "title": "Proven Track Record",
+      "desc": "540+ triumphant courtroom proceedings and a verified 98% case victory rate."
+    }
+  },
+  "founder": {
+    "tag": "Founder's Philosophy",
+    "title": "Victory is not an accident, it is the result of meticulous strategy",
+    "quote": "«The law must always stand on the side of justice. Yet defending the truth demands intellect, authority, and unrelenting resilience. For our clients, we are not merely legal advisors — we are their unyielding fortress.»",
+    "name": "Bobur D. Agzamov",
+    "role": "Managing Partner, Senior Advocate",
+    "experience": "15+ Years in Litigation & Corporate Arbitration"
+  },
+  "services": {
+    "tag": "LEGAL PRACTICE & DEFENSE",
+    "title": "OUR SERVICES",
+    "subtitle": "We take on a selective caseload. Each matter receives direct, personal attorney representation without delegation to assistants.",
+    "learnMore": "Learn More",
+    "allServices": "All Services",
+    "corporate": {
+      "title": "Corporate & Commercial Law",
+      "desc": "Entity formation, M&A structuring, cross-border contract alignment, corporate governance, and ongoing legal outsourcing."
+    },
+    "disputes": {
+      "title": "Commercial & Civil Litigation",
+      "desc": "Debt recovery, breach of contract claims, property disputes, and full representation across economic courts."
+    },
+    "criminal": {
+      "title": "Criminal Defense & Investigation",
+      "desc": "White-collar defense, corporate compliance, official misconduct allegations, and pre-trial defense counsel."
+    },
+    "tax": {
+      "title": "Tax Law & Regulatory Audits",
+      "desc": "Tax dispute resolution, challenging administrative assessments, and strategic risk shielding."
+    },
+    "ip": {
+      "title": "Intellectual Property & Tech Law",
+      "desc": "Trademark and patent registration, copyright defense, SaaS and technology contracts (NDA, SLA), and licensing."
+    },
+    "realestate": {
+      "title": "Real Estate & Construction Law",
+      "desc": "Comprehensive title due diligence, major investment property transactions, and zoning & construction permits."
+    }
+  },
+  "team": {
+    "tag": "Our Counsel",
+    "title": "Our Legal Practice Team",
+    "subtitle": "Distinguished advocates with hundreds of victories in commercial litigation, international arbitration, and business defense.",
+    "viewProfile": "View Profile",
+    "prevLawyer": "Previous Attorney",
+    "nextLawyer": "Next Attorney"
+  },
+  "partners": {
+    "tag": "Trusted By Leaders",
+    "title": "Our Esteemed Clients & Partners",
+    "subtitle": "Market leaders and reputable institutions entrust their mission-critical legal affairs to our firm."
+  },
+  "testimonials": {
+    "tag": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Our clients commend our exceptional professionalism, reliability, and strategic advocacy."
+  },
+  "news": {
+    "tag": "Legal Insights",
+    "title": "Latest News & Analysis",
+    "subtitle": "Critical legislative amendments, notable judicial precedents, and practical legal guidance.",
+    "publishedOn": "Published",
+    "readTime": "min read"
+  },
+  "faq": {
+    "tag": "Frequently Asked",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Clear, concise answers to common inquiries from prospective and existing clients."
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Request a Confidential Consultation",
+    "subtitle": "Our legal team will analyze your inquiries and reach out to you within 15 minutes.",
+    "fullName": "Your Full Name",
+    "phone": "Phone Number",
+    "service": "Select Practice Area",
+    "message": "Briefly describe your legal inquiry",
+    "submit": "Submit Request",
+    "submitting": "Submitting...",
+    "successMessage": "Your request has been received! Our legal specialist will contact you shortly.",
+    "directContact": "Direct Channels",
+    "telegram": "Contact via Telegram",
+    "officeLocation": "Headquarters Location"
+  },
+  "footer": {
+    "description": "AGZAMOV LEGAL GROUP — Uncompromising protection for your business and legal rights. Premier legal services in Tashkent, Uzbekistan.",
+    "navigation": "Navigation",
+    "practiceAreas": "Practices",
+    "contactInfo": "Contact Information",
+    "allRightsReserved": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "aboutPage": {
+    "badge": "Company History & Mission",
+    "titlePrefix": "About Us —",
+    "titleHighlight": "AGZAMOV LEGAL",
+    "description": "A premier team of attorneys and legal consultants united to safeguard your business and uphold justice.",
+    "historyTag": "Our History",
+    "historyTitle": "The dedication behind hundreds of victorious courtroom cases",
+    "historyP1": "AGZAMOV LEGAL GROUP — established in Tashkent, has rapidly evolved into one of the most trusted and uncompromising law firms in Uzbekistan. Our priority is ensuring the total legal security of our clients' rights and business assets in complex challenges.",
+    "historyP2": "We do not merely cite theoretical statutory provisions. We design actionable tactical strategies proven in high-stakes courtrooms that deliver tangible victory to our clients.",
+    "experienceBadge": "12+ Years",
+    "experienceDesc": "Distinguished legal track record in Uzbekistan and international jurisdictions",
+    "casesCount": "540+",
+    "casesLabel": "Successful Cases",
+    "winRate": "98%",
+    "winRateLabel": "Win Rate",
+    "valuesTag": "Core Values",
+    "valuesTitle": "Our Guiding Principles",
+    "valuesSubtitle": "Every decision and legal dispute we manage is anchored in these 4 cornerstone standards.",
+    "values": {
+      "professionalism": {
+        "title": "Uncompromising Professionalism",
+        "desc": "We apply rigorous analytical depth to each matter, achieving optimal outcomes strictly within legal boundaries."
+      },
+      "confidentiality": {
+        "title": "Absolute Confidentiality",
+        "desc": "Attorney-client privilege is sacrosanct. Case details are never disclosed to third parties under any circumstance."
+      },
+      "strategy": {
+        "title": "Strategic Forethought",
+        "desc": "We anticipate legal risks 5 to 10 steps ahead, neutralizing threats before they can materialize."
+      },
+      "integrity": {
+        "title": "Honest Collaboration",
+        "desc": "We make no baseless promises, offering transparent evaluations and candid counsel at every juncture."
+      }
+    },
+    "founderTag": "Leadership Message",
+    "founderQuote": "«Every second of your business is invaluable. Entrust your legal complexities to seasoned professionals.»",
+    "founderDesc": "The legal profession is not merely knowing statutes; it is the art of assuming complete responsibility for people's livelihoods and commercial futures. AGZAMOV LEGAL GROUP serves with this steadfast commitment.",
+    "contactLawyer": "Contact an Attorney",
+    "ourTeamMembers": "Our Team Members"
+  },
+  "servicesPage": {
+    "badge": "Practice Areas",
+    "title": "Our Legal Services",
+    "subtitle": "Comprehensive legal counsel protecting your business from risks and securing your interests in courtrooms.",
+    "casesSuffix": "cases",
+    "workflowTag": "Our Methodology",
+    "workflowTitle": "How We Secure Victory",
+    "workflowSubtitle": "Every litigation and corporate project is resolved through our systematic 4-stage process.",
+    "workflow": {
+      "step1": {
+        "title": "Rigorous Document Auditing",
+        "desc": "We examine existing agreements, evidentiary records, and claims to identify genuine risks and opportunities."
+      },
+      "step2": {
+        "title": "Formulating Winning Strategy",
+        "desc": "Grounding our roadmap in judicial precedents and statutory requirements, we devise a precision tactical plan."
+      },
+      "step3": {
+        "title": "Negotiations & Courtroom Advocacy",
+        "desc": "We mount unyielding defense in proceedings or negotiate pre-trial settlements with maximum client advantage."
+      },
+      "step4": {
+        "title": "Enforcement & Final Outcome",
+        "desc": "We go beyond court rulings to ensure full execution and tangible recovery of client assets and capital."
+      }
+    },
+    "ctaTitle": "Which Practice Area Do You Need Help With?",
+    "ctaDesc": "Explain your circumstances to our counsel; we will deliver an initial legal assessment within 15 minutes.",
+    "ctaButton": "Request a Confidential Consultation",
+    "detail": {
+      "badge": "Legal Practice",
+      "overviewTitle": "Service Overview",
+      "solutionsTitle": "Legal Solutions We Provide",
+      "guaranteeTitle": "Guaranteed Confidentiality & Integrity",
+      "guaranteeDesc": "Every engagement contract safeguards the client's complete legal immunity. All actions comply strictly with the Law of the Republic of Uzbekistan «On Advocacy».",
+      "consultTitle": "Inquire About This Service",
+      "consultSubtitle": "Our attorney will contact you within 15 minutes",
+      "orCallDirect": "Or call our direct line:"
+    }
+  },
+  "teamPage": {
+    "badge": "Premier Advocacy",
+    "title": "Our Team",
+    "subtitle": "Renowned trial attorneys, former judicial officers, and leading corporate counsels united to champion your rights.",
+    "specialization": "Specialization",
+    "bookAppointment": "Book an Appointment",
+    "joinUsTitle": "Interested in Joining Our Team?",
+    "joinUsDesc": "If you are a driven legal professional with superior analytical mastery and court acumen, submit your resume to us.",
+    "sendResume": "Send Resume (hr@agzamovlegal.uz)"
+  },
+  "newsPage": {
+    "badge": "Legal Insights & Updates",
+    "title": "News & Articles",
+    "subtitle": "Legislative analyses, high-profile precedents, and commercial protection guides by our attorneys.",
+    "author": "Author",
+    "minutes": "min",
+    "readTimeSuffix": "min read",
+    "backToArticles": "Back to all articles",
+    "share": "Share:"
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "For any inquiries or dispute resolution, connect immediately with our attorneys or visit our headquarters.",
+    "emergencyBadge": "Emergency Hotline (24/7)",
+    "emergencyDesc": "Round-the-clock urgent attorney dispatch:",
+    "officeTitle": "Headquarters Information",
+    "addressLabel": "Address",
+    "phonesLabel": "Phones",
+    "emailLabel": "Email",
+    "workingHoursLabel": "Working Hours",
+    "onlineRequestTitle": "Submit an Online Inquiry",
+    "onlineRequestDesc": "Provide your details; our attorneys will get in touch with you promptly."
+  }
+}

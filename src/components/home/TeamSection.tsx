@@ -1,0 +1,186 @@
+'use client';
+
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { useLocale, useTranslations } from 'next-intl';
+import { Container } from '../common/Container';
+import { mockWorkers } from '@/data/mockData';
+import { Locale } from '@/types';
+import {
+  Quote,
+  ArrowLeft,
+  ArrowRight,
+  Mail,
+  Phone,
+} from 'lucide-react';
+
+export const TeamSection: React.FC = () => {
+  const tNav = useTranslations('nav');
+  const tTeam = useTranslations('team');
+  const locale = useLocale() as Locale;
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const workers = mockWorkers.filter((w) => w.isActive);
+  const currentWorker = workers[currentIndex] || workers[0];
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? workers.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === workers.length - 1 ? 0 : prev + 1));
+  };
+
+  return (
+    <section className="py-16 sm:py-24 lg:py-32 bg-black border-t border-zinc-900 relative overflow-hidden text-zinc-300">
+      {/* Subtle ambient lighting */}
+      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[600px] bg-red-600/5 rounded-full blur-[180px] pointer-events-none" />
+
+      <Container className="relative z-10 space-y-10 sm:space-y-16">
+        {/* Section Header (Clean, Badgeless, Senior UI/UX) */}
+        <div className="text-center max-w-3xl mx-auto space-y-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase">
+            {tNav('team')}
+          </h2>
+          <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed max-w-2xl mx-auto">
+            {tTeam('subtitle')}
+          </p>
+        </div>
+
+        {/* Main 2-Column Sharp-Rectangular Team Showcase */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+          
+          {/* Left Column: Lawyer Portrait (Strict Sharp Rectangular) */}
+          <div data-aos="fade-right" className="lg:col-span-5 relative">
+            <div className="relative border border-zinc-800 bg-zinc-950 shadow-2xl">
+              <div className="relative h-[360px] sm:h-[440px] lg:h-[520px] w-full">
+                <Image
+                  key={currentWorker.id}
+                  src={currentWorker.image}
+                  alt={currentWorker.name}
+                  fill
+                  className="object-cover object-top filter grayscale contrast-110 hover:grayscale-0 transition-all duration-700 animate-in fade-in zoom-in-95"
+                  sizes="(max-width: 1024px) 100vw, 500px"
+                  priority
+                />
+                {/* Subtle bottom shadow vignette */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              </div>
+            </div>
+
+            {/* Sharp Mini-Thumbnails under photo for direct click */}
+            <div className="flex items-center justify-center gap-3 pt-4">
+              {workers.map((worker, idx) => (
+                <button
+                  key={worker.id}
+                  type="button"
+                  onClick={() => setCurrentIndex(idx)}
+                  className={`relative w-12 h-12 sm:w-14 sm:h-14 border transition-all cursor-pointer ${
+                    idx === currentIndex
+                      ? 'border-red-600 scale-105 shadow-lg shadow-red-600/30'
+                      : 'border-zinc-800 opacity-50 hover:opacity-100 hover:border-zinc-500'
+                  }`}
+                  aria-label={`Select ${worker.name}`}
+                >
+                  <Image
+                    src={worker.image}
+                    alt={worker.name}
+                    fill
+                    className="object-cover object-top"
+                  />
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Column: Quote, Biography & Sharp Navigation Controls */}
+          <div data-aos="fade-left" className="lg:col-span-7 space-y-6 text-left">
+            
+            {/* Quote Block with animated key switch (Sharp Rectangle) */}
+            <div
+              key={currentWorker.id}
+              className="space-y-6 animate-in fade-in slide-in-from-right-3 duration-300"
+            >
+              <div className="p-6 sm:p-8 bg-zinc-950/90 border border-zinc-800/90 shadow-xl space-y-5">
+                <Quote className="w-10 h-10 text-red-600/50" />
+
+                <blockquote className="text-base sm:text-lg lg:text-xl italic font-light text-zinc-200 leading-relaxed">
+                  «{currentWorker.quote ? currentWorker.quote[locale] : currentWorker.bio[locale]}»
+                </blockquote>
+
+                {/* Name & Title */}
+                <div className="pt-3 border-t border-zinc-800/80">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight">
+                    {currentWorker.name}
+                  </h3>
+                  <p className="text-xs sm:text-sm font-extrabold text-red-500 uppercase tracking-wider mt-1">
+                    {currentWorker.position[locale]}
+                  </p>
+                </div>
+              </div>
+
+              {/* Bio summary */}
+              <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+                {currentWorker.bio[locale]}
+              </p>
+
+              {/* Direct Lawyer Contact (Phone & Email) */}
+              <div className="flex flex-wrap items-center gap-6 pt-2 text-xs text-zinc-400 border-t border-zinc-900">
+                {currentWorker.phone && (
+                  <a
+                    href={`tel:${currentWorker.phone.replace(/\s+/g, '')}`}
+                    className="flex items-center gap-2 hover:text-red-500 transition-colors font-medium"
+                  >
+                    <Phone className="w-4 h-4 text-red-600" />
+                    <span>{currentWorker.phone}</span>
+                  </a>
+                )}
+                {currentWorker.email && (
+                  <a
+                    href={`mailto:${currentWorker.email}`}
+                    className="flex items-center gap-2 hover:text-red-500 transition-colors font-medium"
+                  >
+                    <Mail className="w-4 h-4 text-red-600" />
+                    <span>{currentWorker.email}</span>
+                  </a>
+                )}
+              </div>
+            </div>
+
+            {/* Bottom Sharp Slider Navigation (Next / Prev + Indicator) */}
+            <div className="flex items-center justify-between pt-4 border-t border-zinc-900">
+              <div className="flex items-center gap-2 font-mono text-xs font-bold text-zinc-400">
+                <span className="text-red-500 text-sm">0{currentIndex + 1}</span>
+                <span className="text-zinc-600">/</span>
+                <span>0{workers.length}</span>
+              </div>
+
+              {/* Sharp Next / Prev Controls */}
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={handlePrev}
+                  className="w-12 h-12 bg-zinc-950 border border-zinc-800 hover:border-red-600 hover:bg-red-600 hover:text-white text-zinc-300 flex items-center justify-center transition-all cursor-pointer shadow-md"
+                  aria-label={tTeam('prevLawyer')}
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                </button>
+
+                <button
+                  type="button"
+                  onClick={handleNext}
+                  className="w-12 h-12 bg-zinc-950 border border-zinc-800 hover:border-red-600 hover:bg-red-600 hover:text-white text-zinc-300 flex items-center justify-center transition-all cursor-pointer shadow-md"
+                  aria-label={tTeam('nextLawyer')}
+                >
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </Container>
+    </section>
+  );
+};
