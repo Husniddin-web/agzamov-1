@@ -111,7 +111,7 @@ export const WhyChooseUs: React.FC = () => {
                 </div>
 
                 {/* Circle Icon Button */}
-                <div className="w-12 h-12 xl:w-13 xl:h-13 rounded-full bg-zinc-950/90 border border-red-600/40 group-hover:border-red-600 group-hover:bg-red-600 flex items-center justify-center shrink-0 shadow-xl shadow-black/80 group-hover:scale-110 transition-all duration-300 backdrop-blur-md">
+                <div className="w-12 h-12 xl:w-13 xl:h-13 rounded-full bg-zinc-950 border border-zinc-800 group-hover:border-red-600 group-hover:bg-red-600 flex items-center justify-center shrink-0 shadow-xl shadow-black/80 group-hover:scale-105 transition-all duration-300">
                   {item.icon}
                 </div>
               </div>
@@ -150,7 +150,7 @@ export const WhyChooseUs: React.FC = () => {
                 className={`flex items-center justify-start gap-3.5 xl:gap-4 group cursor-pointer transition-transform duration-300 ${item.arcOffset}`}
               >
                 {/* Circle Icon Button */}
-                <div className="w-12 h-12 xl:w-13 xl:h-13 rounded-full bg-zinc-950/90 border border-red-600/40 group-hover:border-red-600 group-hover:bg-red-600 flex items-center justify-center shrink-0 shadow-xl shadow-black/80 group-hover:scale-110 transition-all duration-300 backdrop-blur-md">
+                <div className="w-12 h-12 xl:w-13 xl:h-13 rounded-full bg-zinc-950 border border-zinc-800 group-hover:border-red-600 group-hover:bg-red-600 flex items-center justify-center shrink-0 shadow-xl shadow-black/80 group-hover:scale-105 transition-all duration-300">
                   {item.icon}
                 </div>
 
@@ -182,10 +182,10 @@ export const WhyChooseUs: React.FC = () => {
               className="p-5 sm:p-6 rounded-none bg-zinc-950/80 border border-zinc-800/90 hover:border-red-600/50 backdrop-blur-md space-y-3.5 transition-all group shadow-xl shadow-black/60"
             >
               <div className="flex items-center justify-between">
-                <div className="w-10 h-10 rounded-none bg-zinc-900 border border-red-600/40 group-hover:bg-red-600 group-hover:border-red-600 flex items-center justify-center transition-colors">
+                <div className="w-10 h-10 rounded-none bg-zinc-900 border border-zinc-800 group-hover:border-red-600 group-hover:bg-red-600 flex items-center justify-center transition-colors">
                   {item.icon}
                 </div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider text-red-500 font-mono bg-red-600/10 px-2.5 py-1 rounded-none border border-red-600/20">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-red-500 font-mono">
                   {item.subtitle}
                 </span>
               </div>

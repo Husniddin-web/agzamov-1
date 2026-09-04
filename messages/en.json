@@ -154,7 +154,11 @@
   "faq": {
     "tag": "Frequently Asked",
     "title": "Frequently Asked Questions",
-    "subtitle": "Clear, concise answers to common inquiries from prospective and existing clients."
+    "subtitle": "Clear, concise answers to common inquiries from prospective and existing clients.",
+    "helpTitle": "Still Have Questions?",
+    "helpSubtitle": "Direct Contact with Counsel",
+    "helpDesc": "Our senior trial attorneys provide an objective risk assessment within 15 minutes.",
+    "writeTelegram": "Message on Telegram"
   },
   "contact": {
     "tag": "Contact",

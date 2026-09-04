@@ -154,7 +154,11 @@
   "faq": {
     "tag": "Savollarga javoblar",
     "title": "Ko'p beriladigan savollar",
-    "subtitle": "Mijozlarimiz tomonidan eng ko'p beriladigan savollarga aniq va lo'nda javoblar."
+    "subtitle": "Mijozlarimiz tomonidan eng ko'p beriladigan savollarga aniq va lo'nda javoblar.",
+    "helpTitle": "Savolingiz qoldimi?",
+    "helpSubtitle": "Advokat bilan to'g'ridan-to'g'ri bog'laning",
+    "helpDesc": "Advokatlarimiz sizning holatingiz bo'yicha 15 daqiqada dastlabki xolis bahoni taqdim etadilar.",
+    "writeTelegram": "Telegram orqali yozish"
   },
   "contact": {
     "tag": "Aloqa",

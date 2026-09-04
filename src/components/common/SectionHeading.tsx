@@ -1,5 +1,4 @@
 import React from 'react';
-import { GlowBadge } from './GlowBadge';
 
 interface SectionHeadingProps {
   tag?: string;
@@ -23,7 +22,16 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
         centered ? 'mx-auto text-center' : 'text-left'
       } ${className}`}
     >
-      {tag && <GlowBadge icon>{tag}</GlowBadge>}
+      {tag && (
+        <div
+          className={`flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-red-500 ${
+            centered ? 'justify-center' : 'justify-start'
+          }`}
+        >
+          <span className="w-1.5 h-1.5 bg-red-600 shrink-0" />
+          <span>{tag}</span>
+        </div>
+      )}
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
         {title}
       </h2>
