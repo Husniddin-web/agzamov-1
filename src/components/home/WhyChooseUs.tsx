@@ -73,8 +73,22 @@ export const WhyChooseUs: React.FC = () => {
 
   return (
     <section className="relative py-16 sm:py-24 lg:py-32 bg-black overflow-hidden">
-      {/* Subtle ambient lighting */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-red-600/5 rounded-full blur-[160px] pointer-events-none -z-10" />
+      {/* 1. Precision Red Grid Pattern (Katak-katak fon) */}
+      <div
+        className="absolute inset-0 pointer-events-none z-0"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(239, 68, 68, 0.22) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(239, 68, 68, 0.22) 1px, transparent 1px)
+          `,
+          backgroundSize: '48px 48px',
+          maskImage: 'radial-gradient(ellipse 85% 70% at 50% 50%, black 25%, transparent 85%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 85% 70% at 50% 50%, black 25%, transparent 85%)',
+        }}
+      />
+
+      {/* 2. Ambient Red Depth Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[550px] bg-red-600/10 rounded-full blur-[180px] pointer-events-none z-0" />
 
       <Container className="relative z-10 space-y-16 sm:space-y-20">
         {/* Section Heading */}
