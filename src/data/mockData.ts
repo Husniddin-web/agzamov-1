@@ -244,6 +244,62 @@ export const mockWorkers: WorkerItem[] = [
     phone: '+998 90 444 55 66',
     isActive: true,
   },
+  {
+    id: 'w-5',
+    name: 'Aliyev Sardor Olimovich',
+    position: {
+      uz: "Soliq va Iqtisodiy Nizolar Bo'yicha Katta Advokat",
+      ru: 'Старший адвокат по налоговым спорам',
+      en: 'Senior Counsel, Tax & Commercial Litigation',
+    },
+    experience: {
+      uz: '11 yillik soliq auditi va arbitraj tajribasi',
+      ru: '11 лет налоговой и арбитражной практики',
+      en: '11 years in tax defense & dispute resolution',
+    },
+    bio: {
+      uz: 'Soliq organlari bilan murakkab nizolarni hal qilish, noqonuniy jarimalarni bekor qilish va biznesni audit qilishga ixtisoslashgan.',
+      ru: 'Специалист по урегулированию налоговых претензий, отмене неправомерных штрафов и аудиту бизнес-рисков.',
+      en: 'Specializes in high-value tax disputes, administrative appeals, and corporate fiscal risk assessments.',
+    },
+    specialization: {
+      uz: 'Soliq auditi, Finansiyaviy nizolar, Bojxona huquqi',
+      ru: 'Налоговый аудит, Финансовые споры, Таможенное право',
+      en: 'Tax Audits, Financial Litigation, Customs Law',
+    },
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80',
+    email: 's.aliyev@agzamovlegal.uz',
+    phone: '+998 90 555 66 77',
+    isActive: true,
+  },
+  {
+    id: 'w-6',
+    name: 'Mirzayeva Nilufar Rustamovna',
+    position: {
+      uz: "Ko'chmas Mulk va Qurilish Huquqi Bo'yicha Advokat",
+      ru: 'Адвокат по недвижимости и строительству',
+      en: 'Counsel, Real Estate & Construction Law',
+    },
+    experience: {
+      uz: '9 yillik yirik investitsion loyihalar tajribasi',
+      ru: '9 лет практики в строительных проектах',
+      en: '9 years in real estate development and land zoning',
+    },
+    bio: {
+      uz: 'Yirik qurilish shartnomalari, xorijiy investorlar bilan yer uchastkalari oldi-sotdi bitimlari va kadastr nizolari bo\'yicha yetakchi ekspert.',
+      ru: 'Эксперт по юридическому сопровождению девелоперских проектов, земельному праву и разрешительной документации.',
+      en: 'Expert counsel on commercial developments, land acquisitions, and construction dispute arbitrations.',
+    },
+    specialization: {
+      uz: "Ko'chmas mulk, Qurilish litsenziyalari, Kadastr nizolari",
+      ru: 'Недвижимость, Строительные лицензии, Кадастровые споры',
+      en: 'Real Estate, Construction Licensing, Land Title Disputes',
+    },
+    image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80',
+    email: 'n.mirzayeva@agzamovlegal.uz',
+    phone: '+998 90 666 77 88',
+    isActive: true,
+  },
 ];
 
 export const mockServices: LegalServiceItem[] = [

@@ -231,11 +231,8 @@ export const TestimonialsSection: React.FC = () => {
 
       <Container className="relative z-10 space-y-8 sm:space-y-10">
         
-        {/* Section Header (Centered) */}
+        {/* Section Header (Centered - Badge-free) */}
         <div data-aos="fade-up" className="text-center max-w-2xl mx-auto space-y-3">
-          <span className="text-[10px] sm:text-xs font-mono font-bold uppercase tracking-[0.25em] text-red-500 block">
-            {t('tag')}
-          </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase leading-[1.1]">
             {t('title')}
           </h2>
@@ -249,7 +246,7 @@ export const TestimonialsSection: React.FC = () => {
           {/* Columns Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 h-full items-start">
             
-            {/* Column 1: Moves UP */}
+            {/* Column 1: Moves UP (Full-width on Mobile) */}
             <div className="h-full overflow-hidden">
               <div className="animate-marquee-up space-y-6">
                 {col1.map((item, idx) => (
@@ -258,8 +255,8 @@ export const TestimonialsSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Column 2: Moves DOWN */}
-            <div className="h-full overflow-hidden">
+            {/* Column 2: Moves DOWN (Tablets and Desktops) */}
+            <div className="hidden md:block h-full overflow-hidden">
               <div className="animate-marquee-down space-y-6">
                 {col2.map((item, idx) => (
                   <ReviewCard key={`c2-${idx}`} item={item} locale={locale} />

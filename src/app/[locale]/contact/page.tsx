@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Container } from '@/components/common/Container';
+import { PageHeader } from '@/components/common/PageHeader';
 import { ContactForm } from '@/components/forms/ContactForm';
 import { siteConfig } from '@/config/site';
 import { Locale } from '@/types';
@@ -30,22 +31,21 @@ export async function generateMetadata({ params }: ContactPageProps) {
 export default async function ContactPage({ params }: ContactPageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const tNav = await getTranslations({ locale, namespace: 'nav' });
   const tContact = await getTranslations({ locale, namespace: 'contactPage' });
   const currentLocale = locale as Locale;
 
   return (
-    <div className="pt-28 pb-20 bg-black min-h-screen text-zinc-300">
-      {/* 1. Header Banner */}
-      <section className="py-16 border-b border-zinc-900 relative overflow-hidden">
-        <Container className="relative z-10 text-center space-y-4">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight">
-            {tContact('title')}
-          </h1>
-          <p className="text-sm sm:text-base text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-            {tContact('subtitle')}
-          </p>
-        </Container>
-      </section>
+    <div className="pb-20 bg-black min-h-screen text-zinc-300">
+      {/* 1. Page Header with Thematic Background */}
+      <PageHeader
+        title={tContact('title')}
+        bgImage="/headers/header-contact.jpg"
+        breadcrumbs={[
+          { label: tNav('home'), href: '/' },
+          { label: tNav('contact') },
+        ]}
+      />
 
       {/* 2. Main Form & Contact Channels Grid */}
       <section className="py-16 sm:py-20">

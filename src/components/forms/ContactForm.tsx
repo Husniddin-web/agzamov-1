@@ -67,7 +67,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
           value={formData.fullName}
           onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
           placeholder={t('fullName')}
-          className="w-full px-4 py-3 rounded-none bg-zinc-950/80 border border-zinc-800 text-white placeholder-zinc-500 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all text-xs sm:text-sm"
+          className="w-full px-4 py-3 rounded-none bg-zinc-950/80 border border-zinc-800 text-white placeholder-zinc-500 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all text-base sm:text-sm"
         />
       </div>
 
@@ -82,7 +82,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
           value={formData.phone}
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
           placeholder="+998 90 123 45 67"
-          className="w-full px-4 py-3 rounded-none bg-zinc-950/80 border border-zinc-800 text-white placeholder-zinc-500 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all text-xs sm:text-sm"
+          className="w-full px-4 py-3 rounded-none bg-zinc-950/80 border border-zinc-800 text-white placeholder-zinc-500 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all text-base sm:text-sm"
         />
       </div>
 
@@ -96,7 +96,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
           placeholder={t('message')}
-          className="w-full px-4 py-3 rounded-none bg-zinc-950/80 border border-zinc-800 text-white placeholder-zinc-500 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all text-xs sm:text-sm resize-none"
+          className="w-full px-4 py-3 rounded-none bg-zinc-950/80 border border-zinc-800 text-white placeholder-zinc-500 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all text-base sm:text-sm resize-none"
         />
       </div>
 
@@ -104,7 +104,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
       <button
         type="submit"
         disabled={status === 'loading'}
-        className="w-full group flex items-center justify-center gap-2 px-6 py-3.5 rounded-none bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-extrabold uppercase tracking-wider transition-all duration-200 shadow-lg shadow-red-600/20 cursor-pointer disabled:opacity-50"
+        className="w-full group flex items-center justify-center gap-2 px-6 py-3.5 min-h-[48px] rounded-none bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-extrabold uppercase tracking-wider transition-all duration-200 shadow-lg shadow-red-600/20 cursor-pointer disabled:opacity-50"
       >
         {status === 'loading' ? (
           <>

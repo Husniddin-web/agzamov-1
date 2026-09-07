@@ -45,7 +45,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ isScrolled =
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center gap-1.5 px-3 py-2 text-xs font-bold transition-all cursor-pointer border ${
+        className={`flex items-center gap-1.5 px-3 h-9 text-xs font-bold transition-all cursor-pointer border ${
           isScrolled
             ? 'text-zinc-900 hover:text-black bg-zinc-100 hover:bg-zinc-200 border-zinc-300 hover:border-red-600'
             : 'text-zinc-200 hover:text-white bg-white/[0.08] hover:bg-white/[0.14] border-white/10 hover:border-red-600/50'

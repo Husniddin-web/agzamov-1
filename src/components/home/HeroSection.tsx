@@ -111,7 +111,7 @@ export const HeroSection: React.FC = () => {
             {/* Secondary Button: Outlined style */}
             <Link
               href={slide.secondaryCtaLink}
-              className="border-2 border-white/80 hover:border-red-600 hover:bg-white/10 text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider px-6 sm:px-8 py-3.5 sm:py-4 text-center transition-all duration-200"
+              className="border-2 border-white/80 hover:border-red-600 hover:bg-white/10 text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider px-6 sm:px-8 py-3.5 sm:py-4 rounded-none text-center transition-all duration-200 min-h-[46px] flex items-center justify-center"
             >
               {slide.secondaryCtaText[locale] || slide.secondaryCtaText.uz}
             </Link>
@@ -119,7 +119,7 @@ export const HeroSection: React.FC = () => {
             {/* Primary Button: Solid Red with Arrow */}
             <Link
               href={slide.primaryCtaLink}
-              className="bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider px-6 sm:px-8 py-3.5 sm:py-4 flex items-center justify-center gap-2.5 transition-all duration-200 shadow-lg shadow-red-600/30 group"
+              className="bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider px-6 sm:px-8 py-3.5 sm:py-4 rounded-none flex items-center justify-center gap-2.5 transition-all duration-200 shadow-lg shadow-red-600/30 group min-h-[46px]"
             >
               <span>{slide.primaryCtaText[locale] || slide.primaryCtaText.uz}</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -181,24 +181,24 @@ export const HeroSection: React.FC = () => {
       </div>
 
       {/* 4. MOBILE SLIDER CONTROLS (Bottom Center on small devices) */}
-      <div className="sm:hidden absolute bottom-4 inset-x-0 z-20 flex items-center justify-center gap-4">
+      <div className="sm:hidden absolute bottom-5 inset-x-0 z-20 flex items-center justify-center gap-4">
         <button
           type="button"
           onClick={prevSlide}
-          className="p-2 rounded-full bg-black/60 border border-white/20 text-white"
+          className="w-10 h-10 rounded-full bg-black/70 border border-white/25 text-white flex items-center justify-center active:scale-95 transition-all cursor-pointer"
           aria-label="Previous slide"
         >
-          <ChevronLeft className="w-4 h-4" />
+          <ChevronLeft className="w-5 h-5" />
         </button>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 px-2">
           {heroSlides.map((_, idx) => (
             <button
               key={idx}
               type="button"
               onClick={() => setCurrentSlide(idx)}
-              className={`h-1 rounded-full transition-all ${
-                idx === currentSlide ? 'w-6 bg-red-600' : 'w-2 bg-white/40'
+              className={`h-1.5 rounded-full transition-all cursor-pointer ${
+                idx === currentSlide ? 'w-7 bg-red-600' : 'w-2.5 bg-white/40'
               }`}
               aria-label={`Go to slide ${idx + 1}`}
             />
@@ -208,10 +208,10 @@ export const HeroSection: React.FC = () => {
         <button
           type="button"
           onClick={nextSlide}
-          className="p-2 rounded-full bg-black/60 border border-white/20 text-white"
+          className="w-10 h-10 rounded-full bg-black/70 border border-white/25 text-white flex items-center justify-center active:scale-95 transition-all cursor-pointer"
           aria-label="Next slide"
         >
-          <ChevronRight className="w-4 h-4" />
+          <ChevronRight className="w-5 h-5" />
         </button>
       </div>
     </section>

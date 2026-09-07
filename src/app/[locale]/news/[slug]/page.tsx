@@ -3,8 +3,9 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Container } from '@/components/common/Container';
-import { GlowBadge } from '@/components/common/GlowBadge';
+import { PageHeader } from '@/components/common/PageHeader';
 import { Button } from '@/components/common/Button';
+import { ConsultationBanner } from '@/components/common/ConsultationBanner';
 import { mockNews } from '@/data/mockData';
 import { Locale } from '@/types';
 import { Link } from '@/i18n/routing';
@@ -49,54 +50,39 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   const currentLocale = locale as Locale;
 
   return (
-    <div className="pt-28 pb-20 bg-black min-h-screen">
-      {/* Top Header */}
-      <section className="py-12 border-b border-zinc-900">
-        <Container className="max-w-4xl">
-          <div className="flex items-center gap-3 text-xs text-zinc-400 mb-6">
-            <Link href="/" className="hover:text-white transition-colors">
-              {tNav('home')}
-            </Link>
-            <span>/</span>
-            <Link href="/news" className="hover:text-white transition-colors">
-              {tNav('news')}
-            </Link>
-            <span>/</span>
-            <span className="text-red-500 font-medium line-clamp-1">
-              {article.category[currentLocale]}
-            </span>
-          </div>
-
-          <div className="space-y-4">
-            <GlowBadge icon>{article.category[currentLocale]}</GlowBadge>
-
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-              {article.title[currentLocale]}
-            </h1>
-
-            <div className="flex flex-wrap items-center gap-6 pt-2 text-xs text-zinc-400 border-t border-zinc-800/80">
-              <span className="flex items-center gap-1.5">
-                <User className="w-4 h-4 text-red-600" />
-                {article.author}
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Calendar className="w-4 h-4 text-red-600" />
-                {article.createdAt}
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Clock className="w-4 h-4 text-red-600" />
-                {article.readTime} {tNews('readTimeSuffix')}
-              </span>
-            </div>
-          </div>
-        </Container>
-      </section>
+    <div className="pb-20 bg-black min-h-screen">
+      {/* 1. Page Header with Thematic Background (Badge-free) */}
+      <PageHeader
+        title={article.title[currentLocale]}
+        bgImage="/headers/header-news.jpg"
+        breadcrumbs={[
+          { label: tNav('home'), href: '/' },
+          { label: tNav('news'), href: '/news' },
+          { label: article.category[currentLocale] },
+        ]}
+      >
+        {/* Article Metadata Bar */}
+        <div className="flex flex-wrap items-center justify-center gap-6 pt-3 text-xs text-zinc-300">
+          <span className="flex items-center gap-1.5 font-medium">
+            <User className="w-4 h-4 text-red-500" />
+            {article.author}
+          </span>
+          <span className="flex items-center gap-1.5 font-medium">
+            <Calendar className="w-4 h-4 text-red-500" />
+            {article.createdAt}
+          </span>
+          <span className="flex items-center gap-1.5 font-medium">
+            <Clock className="w-4 h-4 text-red-500" />
+            {article.readTime} {tNews('readTimeSuffix')}
+          </span>
+        </div>
+      </PageHeader>
 
       {/* Article Body */}
-      <section className="py-12">
+      <section className="py-12 sm:py-16">
         <Container className="max-w-4xl space-y-10">
-          {/* Main Hero Image */}
-          <div className="relative h-80 sm:h-[420px] w-full rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900 shadow-2xl">
+          {/* Main Hero Image - Sharp Rectangular */}
+          <div className="relative h-72 sm:h-[420px] w-full rounded-none overflow-hidden border border-zinc-800 bg-zinc-900 shadow-2xl">
             <Image
               src={article.thumbnail}
               alt={article.title[currentLocale]}
@@ -107,8 +93,8 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
             />
           </div>
 
-          {/* Excerpt Lead */}
-          <div className="p-6 rounded-2xl bg-red-600/10 border-l-4 border-l-red-600 border border-red-600/20 text-base sm:text-lg text-zinc-200 font-medium leading-relaxed italic">
+          {/* Excerpt Lead - Sharp Rectangular */}
+          <div className="p-6 sm:p-8 rounded-none bg-red-600/10 border-l-4 border-l-red-600 border border-red-600/20 text-base sm:text-lg text-zinc-200 font-medium leading-relaxed italic">
             «{article.excerpt[currentLocale]}»
           </div>
 
@@ -135,7 +121,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-sky-500/15 border border-sky-500/30 text-sky-400 hover:bg-sky-500 hover:text-white transition-all flex items-center gap-2 text-xs font-bold"
+                className="p-2.5 rounded-none bg-sky-500/15 border border-sky-500/30 text-sky-400 hover:bg-sky-500 hover:text-white transition-all flex items-center gap-2 text-xs font-bold"
               >
                 <Send className="w-3.5 h-3.5" />
                 <span>Telegram</span>
@@ -144,6 +130,9 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
           </div>
         </Container>
       </section>
+
+      {/* Red Grid Consultation Banner */}
+      <ConsultationBanner />
     </div>
   );
 }

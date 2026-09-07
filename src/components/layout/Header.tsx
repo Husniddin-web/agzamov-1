@@ -197,16 +197,16 @@ export const Header: React.FC = () => {
             </div>
 
             {/* Right Section: Language Switcher + GET A QUOTE CTA */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <LanguageSwitcher isScrolled={isScrolled} />
 
               {/* GET A QUOTE CTA Button */}
               <Link
                 href="/contact"
-                className="group flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs lg:text-[13px] uppercase tracking-wider px-6 py-3.5 transition-all shadow-md shadow-red-600/20 shrink-0"
+                className="group flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-wider px-4 sm:px-5 h-9 transition-all shadow-md shadow-red-600/20 shrink-0"
               >
                 <span>{tCommon('getQuote')}</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>

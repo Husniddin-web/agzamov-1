@@ -7,7 +7,7 @@ import { PartnersMarquee } from '@/components/home/PartnersMarquee';
 import { TestimonialsSection } from '@/components/home/TestimonialsSection';
 import { NewsSection } from '@/components/home/NewsSection';
 import { FaqSection } from '@/components/home/FaqSection';
-import { ConsultationCta } from '@/components/home/ConsultationCta';
+import { ConsultationBanner } from '@/components/common/ConsultationBanner';
 
 interface HomePageProps {
   params: Promise<{ locale: string }>;
@@ -27,7 +27,7 @@ export default async function HomePage({ params }: HomePageProps) {
       <TestimonialsSection />
       <NewsSection />
       <FaqSection />
-      <ConsultationCta />
+      <ConsultationBanner />
     </>
   );
 }

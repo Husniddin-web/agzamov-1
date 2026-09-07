@@ -2,7 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Container } from '@/components/common/Container';
-import { GlowBadge } from '@/components/common/GlowBadge';
+import { PageHeader } from '@/components/common/PageHeader';
+import { FaqSection } from '@/components/home/FaqSection';
+import { ConsultationBanner } from '@/components/common/ConsultationBanner';
 import { mockNews } from '@/data/mockData';
 import { Locale } from '@/types';
 import { Link } from '@/i18n/routing';
@@ -25,26 +27,22 @@ export async function generateMetadata({ params }: NewsPageProps) {
 export default async function NewsPage({ params }: NewsPageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const tNav = await getTranslations({ locale, namespace: 'nav' });
   const tCommon = await getTranslations({ locale, namespace: 'common' });
   const tNews = await getTranslations({ locale, namespace: 'newsPage' });
   const currentLocale = locale as Locale;
 
   return (
-    <div className="pt-28 pb-20 bg-black min-h-screen">
-      {/* Banner */}
-      <section className="py-16 border-b border-zinc-900 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-red-700/10 blur-[150px] pointer-events-none" />
-
-        <Container className="relative z-10 text-center space-y-5">
-          <GlowBadge icon>{tNews('badge')}</GlowBadge>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight">
-            {tNews('title')}
-          </h1>
-          <p className="text-base sm:text-lg text-zinc-400 max-w-3xl mx-auto leading-relaxed">
-            {tNews('subtitle')}
-          </p>
-        </Container>
-      </section>
+    <div className="bg-black min-h-screen">
+      {/* 1. Page Header with Thematic Background */}
+      <PageHeader
+        title={tNews('title')}
+        bgImage="/headers/header-news.jpg"
+        breadcrumbs={[
+          { label: tNav('home'), href: '/' },
+          { label: tNav('news') },
+        ]}
+      />
 
       {/* News Grid */}
       <section className="py-20">
@@ -67,7 +65,7 @@ export default async function NewsPage({ params }: NewsPageProps) {
                     <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80" />
 
                     <div className="absolute top-3 left-3">
-                      <span className="px-3 py-1 rounded-full bg-black/80 border border-red-600/40 text-[10px] font-bold text-red-500 uppercase tracking-wider backdrop-blur-md">
+                      <span className="px-3 py-1 rounded-none bg-black/85 border border-red-600/40 text-[10px] font-bold text-red-500 uppercase tracking-wider backdrop-blur-md">
                         {article.category[currentLocale]}
                       </span>
                     </div>
@@ -116,6 +114,12 @@ export default async function NewsPage({ params }: NewsPageProps) {
           </div>
         </Container>
       </section>
+
+      {/* 2. FAQ Section */}
+      <FaqSection />
+
+      {/* 3. Contact & Consultation Section */}
+      <ConsultationBanner />
     </div>
   );
 }

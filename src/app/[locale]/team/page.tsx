@@ -1,12 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
+import { Link } from '@/i18n/routing';
 import { Container } from '@/components/common/Container';
-import { GlowBadge } from '@/components/common/GlowBadge';
-import { Button } from '@/components/common/Button';
+import { PageHeader } from '@/components/common/PageHeader';
+import { ConsultationBanner } from '@/components/common/ConsultationBanner';
+import { FaqSection } from '@/components/home/FaqSection';
 import { mockWorkers } from '@/data/mockData';
 import { Locale } from '@/types';
-import { Mail, Phone, ShieldCheck, ArrowRight } from 'lucide-react';
 
 interface TeamPageProps {
   params: Promise<{ locale: string }>;
@@ -25,98 +26,52 @@ export async function generateMetadata({ params }: TeamPageProps) {
 export default async function TeamPage({ params }: TeamPageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const tNav = await getTranslations({ locale, namespace: 'nav' });
   const tTeam = await getTranslations({ locale, namespace: 'teamPage' });
   const currentLocale = locale as Locale;
 
   return (
-    <div className="pt-28 pb-20 bg-black min-h-screen">
-      {/* Banner */}
-      <section className="py-16 border-b border-zinc-900 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-red-700/10 blur-[150px] pointer-events-none" />
+    <div className="bg-black min-h-screen">
+      {/* 1. Page Header (Clean: No Badge, No Description) */}
+      <PageHeader
+        title={tTeam('title')}
+        bgImage="/headers/header-team.jpg"
+        breadcrumbs={[
+          { label: tNav('home'), href: '/' },
+          { label: tNav('team') },
+        ]}
+      />
 
-        <Container className="relative z-10 text-center space-y-5">
-          <GlowBadge icon>{tTeam('badge')}</GlowBadge>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight">
-            {tTeam('title')}
-          </h1>
-          <p className="text-base sm:text-lg text-zinc-400 max-w-3xl mx-auto leading-relaxed">
-            {tTeam('subtitle')}
-          </p>
-        </Container>
-      </section>
-
-      {/* Team Profiles Grid */}
-      <section className="py-20">
-        <Container className="space-y-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* 2. Team Cards Grid (Sharp Rectangular Cards: Photo + Centered Name & Position) */}
+      <section className="py-20 sm:py-24">
+        <Container>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
             {mockWorkers.map((worker) => (
               <div
                 key={worker.id}
-                className="bento-card p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start group"
+                className="group flex flex-col rounded-none bg-[#0a0b0f] border border-zinc-800/80 hover:border-red-600/60 shadow-xl transition-all duration-300 cursor-pointer overflow-hidden"
               >
-                {/* Photo Column */}
-                <div className="relative h-64 sm:h-72 w-full sm:w-52 shrink-0 rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800">
+                {/* Lawyer Photo - Sharp Rectangular */}
+                <div className="relative h-80 sm:h-96 w-full rounded-none overflow-hidden bg-zinc-900">
                   <Image
                     src={worker.image}
                     alt={worker.name}
                     fill
-                    className="object-cover object-top filter grayscale contrast-110 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-                    sizes="(max-width: 640px) 100vw, 250px"
+                    className="object-cover object-top group-hover:scale-105 filter grayscale contrast-105 group-hover:grayscale-0 transition-all duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
-                  <div className="absolute bottom-3 left-3 right-3">
-                    <span className="px-2.5 py-1 rounded-full bg-black/80 border border-red-600/40 text-[10px] font-bold text-red-500 uppercase tracking-wider backdrop-blur-md">
-                      {worker.experience[currentLocale]}
-                    </span>
-                  </div>
+                  {/* Soft bottom vignette overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0b0f] via-transparent to-transparent opacity-85 group-hover:opacity-40 transition-opacity" />
                 </div>
 
-                {/* Details Column */}
-                <div className="flex-1 space-y-4 flex flex-col justify-between h-full">
-                  <div className="space-y-2">
-                    <h2 className="text-xl font-extrabold text-white group-hover:text-red-500 transition-colors">
-                      {worker.name}
-                    </h2>
-                    <p className="text-xs font-semibold text-red-500">
-                      {worker.position[currentLocale]}
-                    </p>
-                    {worker.specialization && (
-                      <p className="text-xs text-zinc-400 font-mono">
-                        {tTeam('specialization')}: {worker.specialization[currentLocale]}
-                      </p>
-                    )}
-                    <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed pt-2">
-                      {worker.bio[currentLocale]}
-                    </p>
-                  </div>
-
-                  {/* Contacts & Direct Action */}
-                  <div className="pt-4 border-t border-zinc-800/80 flex items-center justify-between gap-3">
-                    <div className="flex items-center gap-2">
-                      {worker.phone && (
-                        <a
-                          href={`tel:${worker.phone}`}
-                          className="p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-300 hover:text-white hover:border-red-600/50 hover:bg-red-600/10 transition-colors"
-                          title={worker.phone}
-                        >
-                          <Phone className="w-4 h-4 text-red-600" />
-                        </a>
-                      )}
-                      {worker.email && (
-                        <a
-                          href={`mailto:${worker.email}`}
-                          className="p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-300 hover:text-white hover:border-red-600/50 hover:bg-red-600/10 transition-colors"
-                          title={worker.email}
-                        >
-                          <Mail className="w-4 h-4 text-red-600" />
-                        </a>
-                      )}
-                    </div>
-
-                    <Button href="/contact" size="sm" variant="outline">
-                      {tTeam('bookAppointment')}
-                    </Button>
-                  </div>
+                {/* Centered Name & Position */}
+                <div className="p-5 text-center space-y-1.5 border-t border-zinc-900/80 bg-[#0a0b0f]">
+                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-red-500 transition-colors tracking-tight leading-snug">
+                    {worker.name}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-zinc-400 font-medium">
+                    {worker.position[currentLocale]}
+                  </p>
                 </div>
               </div>
             ))}
@@ -124,28 +79,11 @@ export default async function TeamPage({ params }: TeamPageProps) {
         </Container>
       </section>
 
-      {/* Careers Callout */}
-      <section className="py-20 bg-zinc-950/60 border-t border-zinc-900">
-        <Container>
-          <div className="bento-card p-8 sm:p-12 border-red-600/40 text-center max-w-4xl mx-auto space-y-6">
-            <ShieldCheck className="w-12 h-12 text-red-600 mx-auto" />
-            <h2 className="text-2xl sm:text-3xl font-black text-white">
-              {tTeam('joinUsTitle')}
-            </h2>
-            <p className="text-sm text-zinc-400 max-w-xl mx-auto">
-              {tTeam('joinUsDesc')}
-            </p>
-            <Button
-              href="mailto:hr@agzamovlegal.uz"
-              size="md"
-              variant="primary"
-              icon={<ArrowRight className="w-4 h-4" />}
-            >
-              {tTeam('sendResume')}
-            </Button>
-          </div>
-        </Container>
-      </section>
+      {/* 3. Red Grid Consultation Section (Single Unified Eye-Friendly Banner) */}
+      <ConsultationBanner />
+
+      {/* 4. FAQ Section */}
+      <FaqSection />
     </div>
   );
 }
