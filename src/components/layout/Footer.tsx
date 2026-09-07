@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { Link } from '@/i18n/routing';
+import { Link, usePathname } from '@/i18n/routing';
 import { Container } from '../common/Container';
 import { siteConfig, navLinks } from '@/config/site';
 import { Locale } from '@/types';
@@ -21,6 +21,12 @@ export const Footer: React.FC = () => {
   const tCommon = useTranslations('common');
   const tServices = useTranslations('services');
   const locale = useLocale() as Locale;
+  const pathname = usePathname();
+
+  // Do not render public footer in admin panel
+  if (pathname.includes('/admin')) {
+    return null;
+  }
 
   const practiceKeys = ['corporate', 'disputes', 'criminal', 'tax', 'ip', 'realestate'];
 

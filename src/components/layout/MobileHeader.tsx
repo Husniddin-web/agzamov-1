@@ -77,21 +77,21 @@ export const MobileHeader: React.FC = () => {
           className="flex items-center gap-2.5 select-none"
           title="AGZAMOV LEGAL GROUP"
         >
-          <div className="relative w-8 h-8 shrink-0 flex items-center justify-center">
+          <div className="relative w-9 h-9 sm:w-10 sm:h-10 shrink-0 flex items-center justify-center">
             <Image
               src="/logo1-crop.png"
               alt="Agzamov Legal Group"
-              width={34}
-              height={34}
+              width={40}
+              height={40}
               className="w-full h-full object-contain"
               priority
             />
           </div>
           <div className="flex flex-col text-left">
-            <span className="text-sm font-black tracking-wider text-white leading-tight">
+            <span className="text-base font-black tracking-wider text-white leading-tight">
               AGZAMOV
             </span>
-            <span className="text-[7.5px] tracking-[0.22em] font-extrabold text-red-600 uppercase leading-none">
+            <span className="text-[8.5px] tracking-[0.24em] font-extrabold text-red-600 uppercase leading-none mt-0.5">
               LEGAL GROUP
             </span>
           </div>

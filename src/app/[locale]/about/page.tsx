@@ -5,6 +5,7 @@ import { Link } from '@/i18n/routing';
 import { Container } from '@/components/common/Container';
 import { PageHeader } from '@/components/common/PageHeader';
 import { ConsultationBanner } from '@/components/common/ConsultationBanner';
+import { LicensesSection } from '@/components/home/LicensesSection';
 import { PartnersMarquee } from '@/components/home/PartnersMarquee';
 import { FaqSection } from '@/components/home/FaqSection';
 import { Locale } from '@/types';
@@ -296,13 +297,16 @@ export default async function AboutPage({ params }: AboutPageProps) {
         </section>
       </div>
 
-      {/* 4. Partners Marquee (Main Page Section - High Credibility) */}
+      {/* 4. Licenses Section */}
+      <LicensesSection />
+
+      {/* 5. Partners Marquee (Main Page Section - High Credibility) */}
       <PartnersMarquee />
 
-      {/* 5. Consultation Banner (Red Grid, matching Team & Services) */}
+      {/* 6. Consultation Banner (Red Grid, matching Team & Services) */}
       <ConsultationBanner />
 
-      {/* 6. FAQ Section (Main Page Section) */}
+      {/* 7. FAQ Section (Main Page Section) */}
       <FaqSection />
     </div>
   );

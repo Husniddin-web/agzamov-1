@@ -298,5 +298,27 @@
     "workingHoursLabel": "Working Hours",
     "onlineRequestTitle": "Submit an Online Inquiry",
     "onlineRequestDesc": "Provide your details; our attorneys will get in touch with you promptly."
+  },
+  "licenses": {
+    "badge": "Legitimacy & Official Accreditation",
+    "title": "State Licenses & Official Certificates",
+    "subtitle": "AGZAMOV LEGAL GROUP law office operates under official state licenses issued by the Ministry of Justice of the Republic of Uzbekistan. Every client's interests are firmly protected under statutory law and professional attorney ethics.",
+    "zoomHint": "Click to view full resolution document",
+    "close": "Close",
+    "item1": {
+      "badge": "License",
+      "title": "License for the Practice of Law & Legal Advocacy",
+      "authority": "Ministry of Justice of the Republic of Uzbekistan",
+      "desc": "Official state certificate authorizing the provision of comprehensive professional legal assistance, litigation, and attorney representation in all court jurisdictions."
+    },
+    "item2": {
+      "badge": "Certificate",
+      "title": "Certificate of State Registration of Law Bureau",
+      "authority": "Tashkent City Department of Justice",
+      "desc": "Official statutory certificate verifying the state registration and certified legal status of AGZAMOV LEGAL GROUP law firm."
+    },
+    "trust1": "Licensed by the Ministry of Justice",
+    "trust2": "Member of the Chamber of Advocates",
+    "trust3": "100% Attorney-Client Privilege"
   }
 }

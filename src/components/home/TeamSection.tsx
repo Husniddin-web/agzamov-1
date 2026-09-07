@@ -1,11 +1,12 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { Container } from '../common/Container';
 import { mockWorkers } from '@/data/mockData';
-import { Locale } from '@/types';
+import { Locale, WorkerItem } from '@/types';
+import { getFullImageUrl, getApiBaseUrl } from '@/lib/adminApi';
 import {
   Quote,
   ArrowLeft,
@@ -21,8 +22,37 @@ export const TeamSection: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayIndex, setDisplayIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [workers, setWorkers] = useState<WorkerItem[]>(mockWorkers.filter((w) => w.isActive));
 
-  const workers = mockWorkers.filter((w) => w.isActive);
+  useEffect(() => {
+    const apiUrl = getApiBaseUrl();
+    fetch(`${apiUrl}/team?limit=50&isActive=true`)
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.success && Array.isArray(res.data) && res.data.length > 0) {
+          const mapped: WorkerItem[] = res.data.map((item: any) => ({
+            id: item._id,
+            name: item.fullName?.[locale] || item.fullName?.uz || '',
+            position: item.position || { uz: '', ru: '', en: '' },
+            experience: {
+              uz: `${item.experienceYears || 10}+ yillik tajriba`,
+              ru: `${item.experienceYears || 10}+ лет опыта`,
+              en: `${item.experienceYears || 10}+ years experience`,
+            },
+            bio: item.bio || { uz: '', ru: '', en: '' },
+            quote: item.quote || { uz: '', ru: '', en: '' },
+            image: getFullImageUrl(item.image),
+            phone: item.phone,
+            email: item.email,
+            isActive: item.isActive,
+          }));
+          setWorkers(mapped);
+        }
+      })
+      .catch(() => {
+        // Fallback to mockWorkers
+      });
+  }, [locale]);
 
   const changeLawyer = (nextIndex: number) => {
     if (nextIndex === currentIndex || isTransitioning) return;

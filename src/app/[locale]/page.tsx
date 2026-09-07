@@ -1,6 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { HeroSection } from '@/components/home/HeroSection';
 import { WhyChooseUs } from '@/components/home/WhyChooseUs';
+import { LicensesSection } from '@/components/home/LicensesSection';
 import { TeamSection } from '@/components/home/TeamSection';
 import { ServicesSection } from '@/components/home/ServicesSection';
 import { PartnersMarquee } from '@/components/home/PartnersMarquee';
@@ -25,6 +26,7 @@ export default async function HomePage({ params }: HomePageProps) {
       <ServicesSection />
       <PartnersMarquee />
       <TestimonialsSection />
+      <LicensesSection />
       <NewsSection />
       <FaqSection />
       <ConsultationBanner />

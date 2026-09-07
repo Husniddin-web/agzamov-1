@@ -298,5 +298,27 @@
     "workingHoursLabel": "Ish Vaqti",
     "onlineRequestTitle": "Onlayn Murojaat Qoldirish",
     "onlineRequestDesc": "Ma'lumotlaringizni to‘ldiring, advokatlarimiz tez orada siz bilan bog‘lanishadi."
+  },
+  "licenses": {
+    "badge": "Qonuniy Faoliyat Kafolati",
+    "title": "Davlat Litsenziyalari va Rasmiy Guvohnomalar",
+    "subtitle": "AGZAMOV LEGAL GROUP advokatlik byurosi O‘zbekiston Respublikasi Adliya vazirligi tomonidan berilgan rasmiy davlat litsenziyalari asosida faoliyat yuritadi. Har bir ishonch bildiruvchining manfaatlari qonun va kasbiy etika doirasida to‘liq himoyalangan.",
+    "zoomHint": "Hujjatni to‘liq ko‘rish uchun bosing",
+    "close": "Yopish",
+    "item1": {
+      "badge": "Litsenziya",
+      "title": "Advokatlik Faoliyati Bilan Shug‘ullanish Huquqi Litsenziyasi",
+      "authority": "O‘zbekiston Respublikasi Adliya Vazirligi",
+      "desc": "Fuqarolar va yuridik shaxslarga har tomonlama professional yuridik yordam ko‘rsatish, sudlarda himoyachi va vakil sifatida ishtirok etish huquqini beruvchi davlat hujjati."
+    },
+    "item2": {
+      "badge": "Guvohnoma",
+      "title": "Advokatlik Byurosi Davlat Ro‘yxatidan O‘tkazilganligi Guvohnomasi",
+      "authority": "Toshkent Shahar Adliya Boshqarmasi",
+      "desc": "AGZAMOV LEGAL GROUP advokatlik tuzilmasining qonuniy ro‘yxatdan o‘tganligi va rasmiy yuridik shaxs maqomiga egaligini tasdiqlovchi rasmiy davlat hujjati."
+    },
+    "trust1": "Adliya Vazirligi Ro‘yxatida",
+    "trust2": "O‘zbekiston Advokatlar Palatasi A’zosi",
+    "trust3": "100% Advokatlik Siri Kafolati"
   }
 }

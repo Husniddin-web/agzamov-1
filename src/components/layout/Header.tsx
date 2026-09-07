@@ -40,6 +40,11 @@ export const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Do not render public header in admin panel
+  if (pathname.includes('/admin')) {
+    return null;
+  }
+
   // Filter out 'home' text link because Home is handled by the dedicated Red Home Icon button on desktop
   const navigationItems = navLinks.filter((item) => item.key !== 'home');
 
@@ -63,24 +68,24 @@ export const Header: React.FC = () => {
               {/* Top Bar Logo */}
               <Link
                 href="/"
-                className="flex items-center gap-3 shrink-0 group"
+                className="flex items-center gap-3.5 shrink-0 group"
                 title="AGZAMOV LEGAL GROUP"
               >
-                <div className="relative w-11 h-11 shrink-0 flex items-center justify-center">
+                <div className="relative w-13 h-13 sm:w-14 sm:h-14 shrink-0 flex items-center justify-center">
                   <Image
                     src="/logo1-crop.png"
                     alt="Agzamov Legal Group"
-                    width={48}
-                    height={48}
+                    width={56}
+                    height={56}
                     className="w-full h-full object-contain"
                     priority
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-lg lg:text-xl font-black tracking-wider text-zinc-950 leading-tight group-hover:text-red-600 transition-colors">
+                  <span className="text-xl lg:text-2xl font-black tracking-wider text-zinc-950 leading-tight group-hover:text-red-600 transition-colors">
                     AGZAMOV
                   </span>
-                  <span className="text-[10px] tracking-[0.25em] font-extrabold text-red-600 uppercase leading-none">
+                  <span className="text-[10.5px] lg:text-[11px] tracking-[0.25em] font-extrabold text-red-600 uppercase leading-none mt-0.5">
                     LEGAL GROUP
                   </span>
                 </div>
@@ -135,28 +140,28 @@ export const Header: React.FC = () => {
               {/* Scrolled Logo (Reveals smoothly when sticky) */}
               <div
                 className={`flex items-center transition-all duration-300 overflow-hidden ${
-                  isScrolled ? 'max-w-[240px] opacity-100 mr-4' : 'max-w-0 opacity-0 mr-0'
+                  isScrolled ? 'max-w-[320px] opacity-100 mr-5' : 'max-w-0 opacity-0 mr-0'
                 }`}
               >
                 <Link
                   href="/"
-                  className="flex items-center gap-2.5 shrink-0 group py-2"
+                  className="flex items-center gap-3 shrink-0 group py-1.5"
                   title="AGZAMOV LEGAL GROUP"
                 >
-                  <div className="relative w-9 h-9 shrink-0 flex items-center justify-center">
+                  <div className="relative w-11 h-11 sm:w-12 sm:h-12 shrink-0 flex items-center justify-center">
                     <Image
                       src="/logo1-crop.png"
                       alt="Agzamov Legal Group"
-                      width={38}
-                      height={38}
+                      width={48}
+                      height={48}
                       className="w-full h-full object-contain"
                     />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-sm sm:text-base font-black tracking-wider text-zinc-950 leading-tight">
+                    <span className="text-base sm:text-lg font-black tracking-wider text-zinc-950 leading-tight">
                       AGZAMOV
                     </span>
-                    <span className="text-[8px] tracking-[0.2em] font-extrabold text-red-600 uppercase leading-none">
+                    <span className="text-[9.5px] sm:text-[10px] tracking-[0.24em] font-extrabold text-red-600 uppercase leading-none mt-0.5">
                       LEGAL GROUP
                     </span>
                   </div>
